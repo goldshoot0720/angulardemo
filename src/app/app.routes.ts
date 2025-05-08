@@ -17,6 +17,18 @@ export const routes: Routes = [
         loadComponent: () => import('./tab2/tab2.component').then(m => m.Tab2Component)
     },
     {
+        path: 'tab3',
+        loadComponent: () => import('./tab3/tab3.component').then(m => m.Tab3Component)
+    },
+    {
+        path: 'tab4',
+        loadComponent: () => import('./tab4/tab4.component').then(m => m.Tab4Component)
+    },
+    {
+        path: 'tab5',
+        loadComponent: () => import('./tab5/tab5.component').then(m => m.Tab5Component)
+    },
+    {
         path: '**',
         loadComponent: () => import('./tab404/tab404.component').then(m => m.Tab404Component)
     },
