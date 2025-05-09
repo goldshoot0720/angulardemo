@@ -1,19 +1,7 @@
 <label>倒數標題:</label>
 <br>
-<input type="text" [(ngModel)]="mydatetitle">
+<input type="text" [(ngModel)]="mydatetitle"><button (click)="mydatetitle = ''">-</button>
 <br>
-<input type="date" [(ngModel)]="mydate1str">
-<br>
-<input type="date" [(ngModel)]="mydate2str">
-<br>
-{{mydatetitle}}
-<br>
-{{mydate1str}}
-<br>
-{{mydate2str}}
-<br>
-<button (click)="NewDate()">新增單一倒數日期</button>
-<br>
-<button (click)="NewDateRange()">新增區間倒數日期</button>
+<input type="date" [(ngModel)]="mydatestr">
 <br>
 距離{{mydatetitle}}，倒數{{DateCountDown()}}天
