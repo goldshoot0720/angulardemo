@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   title = 'angulardemo';
   isDarkTheme = false;
   myTheme: string | null = 'light';
+
   ngOnInit(): void {
     this.myTheme = localStorage.getItem('myTheme');
     if (this.myTheme == null || this.myTheme === 'light') {
@@ -35,4 +36,5 @@ export class AppComponent implements OnInit {
       localStorage.setItem("myTheme", "light");
     }
   }
+
 }

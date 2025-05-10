@@ -1,0 +1,12 @@
+<h1>鋒兄Tube 🎬</h1>
+
+<video #playerContainer id="my-player" class="video-js vjs-default-skin"></video>
+
+<hr>
+
+<h3>播放清單</h3>
+<ul>
+  <li *ngFor="let item of playlist; let i = index" (click)="playIndex(i)">
+    ▶️ {{ item.name }}
+  </li>
+</ul>

@@ -4,7 +4,7 @@ git init
 
 git add .
 
-git commit -m "angulardemo tab5 title alt"
+git commit -m "angulardemo tab7"
 
 git remote add origin https://github.com/goldshoot0720/angulardemo.git
 
