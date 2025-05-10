@@ -21,4 +21,10 @@ export class Tab5Component implements OnInit {
     let date3 = Math.floor((date2.getTime() - date1.getTime())/1000/3600/24);
     return date3;
   }
+  DateCountDown3(strdate:string){
+    let date1 = new Date();
+    let date2 = new Date(strdate);
+    let date3 = Math.floor((date2.getTime() - date1.getTime())/1000/3600/24);
+    return date3;
+  }
 }
