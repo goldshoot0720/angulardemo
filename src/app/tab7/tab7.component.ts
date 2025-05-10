@@ -293,12 +293,12 @@ export class Tab7Component implements AfterViewInit {
     this.player = videojs(this.playerContainer.nativeElement, {
       controls: true,
       preload: 'auto',
-      width: 333
+      width: 333,
+      autoplay: true
     });
 
     // 設定播放清單
     this.player.playlist(this.playlist);
-    this.player.playlist.autoadvance(0);
   }
 
   playIndex(i: number) {
