@@ -28,6 +28,10 @@ export const routes: Routes = [
         path: 'tab5',
         loadComponent: () => import('./tab5/tab5.component').then(m => m.Tab5Component)
     },
+  {
+    path: 'tab6',
+    loadComponent: () => import('./tab6/tab6.component').then(m => m.Tab6Component)
+  },
     {
         path: '**',
         loadComponent: () => import('./tab404/tab404.component').then(m => m.Tab404Component)
