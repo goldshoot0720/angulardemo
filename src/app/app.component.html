@@ -1,7 +1,10 @@
 <div class="header">
 <nav class="navbar navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/tab0">草包鋒兄</a>
+    <a class="navbar-brand" routerLink="/tab0">草包鋒兄</a>
+    <button (click)="SwitchDarkTheme()" class="btn bg-transparent text-primary border-secondary">
+      {{ isDarkTheme ? '☀️' : '🌙' }}
+    </button>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,41 +16,41 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/tab0">Home</a>
-            <a class="nav-link active" aria-current="page" href="/tab1">Tab1</a>
-            <a class="nav-link active" aria-current="page" href="/tab2">Tab2</a>
-            <a class="nav-link active" aria-current="page" href="/tab3">Tab3</a>
-            <a class="nav-link active" aria-current="page" href="/tab4">Tab4</a>
-            <a class="nav-link active" aria-current="page" href="/tab5">Tab5</a>
-            <a class="nav-link active" aria-current="page" href="/tab6">Tab6</a>
-            <a class="nav-link active" aria-current="page" href="/tab7">Tab7</a>
-            <a class="nav-link active" aria-current="page" href="/tab8">Tab8</a>
-            <a class="nav-link active" aria-current="page" href="/tab9">Tab9</a>
-            <a class="nav-link active" aria-current="page" href="/tab11">Tab11</a>
-            <a class="nav-link active" aria-current="page" href="/tab12">Tab12</a>
-            <a class="nav-link active" aria-current="page" href="/tab13">Tab13</a>
-            <a class="nav-link active" aria-current="page" href="/tab14">Tab14</a>
-            <a class="nav-link active" aria-current="page" href="/tab15">Tab15</a>
-            <a class="nav-link active" aria-current="page" href="/tab16">Tab16</a>
-            <a class="nav-link active" aria-current="page" href="/tab17">Tab17</a>
-            <a class="nav-link active" aria-current="page" href="/tab18">Tab18</a>
-            <a class="nav-link active" aria-current="page" href="/tab19">Tab19</a>
-            <a class="nav-link active" aria-current="page" href="/tab21">Tab21</a>
-            <a class="nav-link active" aria-current="page" href="/tab22">Tab22</a>
-            <a class="nav-link active" aria-current="page" href="/tab23">Tab23</a>
-            <a class="nav-link active" aria-current="page" href="/tab24">Tab24</a>
-            <a class="nav-link active" aria-current="page" href="/tab25">Tab25</a>
-            <a class="nav-link active" aria-current="page" href="/tab26">Tab26</a>
-            <a class="nav-link active" aria-current="page" href="/tab27">Tab27</a>
-            <a class="nav-link active" aria-current="page" href="/tab28">Tab28</a>
-            <a class="nav-link active" aria-current="page" href="/tab29">Tab29</a>
-            <a class="nav-link active" aria-current="page" href="/tab31">Tab31</a>
-            <a class="nav-link active" aria-current="page" href="/tab32">Tab32</a>
-            <a class="nav-link active" aria-current="page" href="/tab33">Tab33</a>
-            <a class="nav-link active" aria-current="page" href="/tab34">Tab34</a>
-            <a class="nav-link active" aria-current="page" href="/tab35">Tab35</a>
-            <a class="nav-link active" aria-current="page" href="/tab36">Tab36</a>
-            <a class="nav-link active" aria-current="page" href="/tab37">Tab37</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab0">Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab1">Tab1</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab2">Tab2</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab3">Tab3</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab4">Tab4</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab5">Tab5</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab6">Tab6</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab7">Tab7</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab8">Tab8</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab9">Tab9</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab11">Tab11</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab12">Tab12</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab13">Tab13</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab14">Tab14</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab15">Tab15</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab16">Tab16</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab17">Tab17</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab18">Tab18</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab19">Tab19</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab21">Tab21</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab22">Tab22</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab23">Tab23</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab24">Tab24</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab25">Tab25</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab26">Tab26</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab27">Tab27</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab28">Tab28</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab29">Tab29</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab31">Tab31</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab32">Tab32</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab33">Tab33</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab34">Tab34</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab35">Tab35</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab36">Tab36</a>
+            <a class="nav-link active" aria-current="page" routerLink="/tab37">Tab37</a>
           </li>
         </ul>
       </div>
