@@ -144,12 +144,6 @@ export class Tab8Component {
     },
     {
       column1: '鋒兄銀行',
-      column2: '活存',
-      column3: '',
-      column4: '',
-    },
-    {
-      column1: '鋒兄銀行',
       column2: '定存利息',
       column3: '',
       column4: '',
