@@ -17,7 +17,6 @@ export class Tab3Component {
       column3: '00/00',
       column4: '',
       link:'https://www.netflix.com',
-      linktitle:'Netflix'
     },
     {
       column1: '',
