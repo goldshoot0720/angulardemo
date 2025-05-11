@@ -16,6 +16,12 @@
       <textarea [(ngModel)]="tempcolumn4"></textarea>
     </li>
     <li>
+      @if (link){
+        <label>link：</label>
+        <textarea [(ngModel)]="templink"></textarea>
+      }
+    </li>
+    <li>
   <button (click)="SaveClick()">儲存</button>
   <button (click)="CancelClick()">取消</button>
     </li>
@@ -45,6 +51,9 @@
     <td>{{ column.column4 }}</td>
     @if (isMore) {
       <td>
+        @if (link && column.link != null ) {
+          <a href="{{ column.link }}" style="text-decoration: none;">🔗</a>
+        }
         <button (click)="EditClick(column, i)">編輯</button>
         <button (click)="RemoveClick(column, i)">刪除</button>
       </td>
@@ -52,3 +61,4 @@
   </tr>
   </tbody>
 </table>
+

@@ -15,6 +15,7 @@ export class TablemyComponent implements  OnInit {
   @Input() columntitle4!: string;
   @Input() columns!: any[];
   @Input() crud!:boolean;
+  @Input() link!:boolean;
 
   isMore = false;
   isEdit = false;
@@ -23,6 +24,7 @@ export class TablemyComponent implements  OnInit {
   tempcolumn2!: string;
   tempcolumn3!: string;
   tempcolumn4!: string;
+  templink!: string;
 
   tempindex!:number;
 
@@ -34,6 +36,7 @@ export class TablemyComponent implements  OnInit {
     this.tempcolumn3=column.column3 ;
     this.tempcolumn4=column.column4 ;
     this.tempindex=index ;
+    this.templink = column.link ;
   }
 
   CancelClick(){

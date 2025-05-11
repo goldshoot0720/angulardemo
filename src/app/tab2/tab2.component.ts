@@ -24,18 +24,21 @@ export class Tab2Component {
       column2: '05/26(一)~06/05(四)',
       column3: '06/23(一)~07/03(四',
       column4: '07/31(四)下午',
+      link:'https://www.tcmg.com.tw/index.php/main/schedule_time?id=14'
     },
     {
       column1: '天晟/黃信凱(心臟內科)',
       column2: '[預定改成07/11(五)下午]',
       column3: '05/27(二)~06/06(五)',
       column4: '07/04(五)下午',
+      link: 'https://www.tcmg.com.tw/index.php/main/schedule_time?id=18'
     },
     {
       column1: '范光迪/陳建鴻',
       column2: '[預定改成06/30(一)或07/03(三)上午]',
       column3: '[預定改成07/10 /11 /12(四五六)上午',
       column4: '06/27(五)上午',
+      link: 'https://www.fanktclinic.com/'
     },
     {
       column1: '晶鑽牙醫',

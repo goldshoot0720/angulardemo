@@ -15,6 +15,7 @@ export class Tab1Component implements OnInit {
       column2: '05/15',
       column3: '05/30',
       column4: '大潤發',
+      link:'https://news.rt-mart.com.tw/main/6772'
     },
     {
       column1: '經典摩卡壺',
