@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
 
@@ -8,7 +8,7 @@ import {FormsModule} from '@angular/forms';
   templateUrl: './tablemy.component.html',
   styleUrl: './tablemy.component.css'
 })
-export class TablemyComponent {
+export class TablemyComponent implements  OnInit {
   @Input() columntitle1!: string;
   @Input() columntitle2!: string;
   @Input() columntitle3!: string;
@@ -43,15 +43,34 @@ export class TablemyComponent {
   SaveClick(){
     this.isEdit = false ;
     this.isMore = false;
-    this.columns[this.tempindex].column1 = this.tempcolumn1!;
-    this.columns[this.tempindex].column2 = this.tempcolumn2!;
-    this.columns[this.tempindex].column3 = this.tempcolumn3!;
-    this.columns[this.tempindex].column4 = this.tempcolumn4!;
+    if ( confirm(`確定儲存?!\n${this.tempcolumn1!}\n${this.tempcolumn2!}\n${this.tempcolumn3!}\n${this.tempcolumn4!}`) ) {
+      this.columns[this.tempindex].column1 = this.tempcolumn1!;
+      this.columns[this.tempindex].column2 = this.tempcolumn2!;
+      this.columns[this.tempindex].column3 = this.tempcolumn3!;
+      this.columns[this.tempindex].column4 = this.tempcolumn4!;
+    }
   }
 
-  RemoveClick(index: number){
+  RemoveClick(column:any, index: number){
     this.isEdit = false ;
     this.isMore = false;
-    this.columns.splice(this.tempindex,1);
+    this.tempcolumn1=column.column1 ;
+    this.tempcolumn2=column.column2 ;
+    this.tempcolumn3=column.column3 ;
+    this.tempcolumn4=column.column4 ;
+    this.tempindex=index ;
+    if ( confirm(`確定刪除?!\n${this.tempcolumn1!}\n${this.tempcolumn2!}\n${this.tempcolumn3!}\n${this.tempcolumn4!}`) )
+    {
+      this.columns.splice(this.tempindex,1);
+      if ( this.columns.length == 0){
+        this.crud = false;
+      }
+    }
+  }
+
+  ngOnInit() {
+    if ( this.columns.length == 0){
+      this.crud = false;
+    }
   }
 }
