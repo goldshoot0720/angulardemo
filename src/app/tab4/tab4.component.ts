@@ -20,6 +20,13 @@ export class Tab4Component implements OnInit {
       link:'https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11310822&Area=search&mdiv=403&oid=1_13&cid=index&kw=Mac+mini+M',
     },
     {
+      column1: 'ThinkBook 14 G7',
+      column2: '23900',
+      column3: '2025',
+      column4: '16GB/512G/Ultra5 125U',
+      link:'https://24h.pchome.com.tw/prod/DHAD83-A900HZ6NA'
+    },
+    {
       column1: 'Galaxy S25',
       column2: '27900',
       column3: '2025',
