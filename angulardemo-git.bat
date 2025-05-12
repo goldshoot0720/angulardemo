@@ -4,7 +4,7 @@ git init
 
 git add .
 
-git commit -m "angulardemo autoplay"
+git commit -m "angulardemo vivoactive"
 
 git remote add origin https://github.com/goldshoot0720/angulardemo.git
 

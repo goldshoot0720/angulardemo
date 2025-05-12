@@ -38,7 +38,7 @@ export class Tab8Component {
     {
       column1: '國泰世華',
       column2: '活存',
-      column3: '',
+      column3: '265',
       column4: '',
     },
     {
@@ -97,7 +97,7 @@ export class Tab8Component {
     {
       column1: '玉山銀行',
       column2: '活存',
-      column3: '',
+      column3: '254',
       column4: '',
     },
     {
@@ -109,7 +109,7 @@ export class Tab8Component {
     {
       column1: '台新銀行',
       column2: '活存',
-      column3: '',
+      column3: '31',
       column4: '',
     },
     {
@@ -190,6 +190,18 @@ export class Tab8Component {
       column1: '家樂福',
       column2: '23',
       column3: '',
+      column4: '',
+    },
+    {
+      column1: 'vivoactive 5',
+      column2: '',
+      column3: '悠遊卡',
+      column4: '',
+    },
+    {
+      column1: 'vivoactive 6',
+      column2: '',
+      column3: '悠遊卡',
       column4: '',
     },
   ];
