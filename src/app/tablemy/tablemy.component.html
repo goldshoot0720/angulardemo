@@ -1,64 +1,66 @@
-@if (isEdit) {
-  <ul>
-    <li>
-  <label>{{ columntitle1 }}：</label>
-      <textarea [(ngModel)]="tempcolumn1"></textarea>
-    <li>
-      <label>{{ columntitle2 }}：</label>
-      <textarea [(ngModel)]="tempcolumn2"></textarea>
-    </li>
-    <li>
-      <label>{{ columntitle3 }}：</label>
-      <textarea [(ngModel)]="tempcolumn3"></textarea>
-    </li>
-    <li>
-      <label>{{ columntitle4 }}：</label>
-      <textarea [(ngModel)]="tempcolumn4"></textarea>
-    </li>
-    <li>
-      @if (link){
-        <label>link：</label>
-        <textarea [(ngModel)]="templink"></textarea>
-      }
-    </li>
-    <li>
-  <button (click)="SaveClick()">儲存</button>
-  <button (click)="CancelClick()">取消</button>
-    </li>
-  </ul>
-}
-@if (crud){
-  @if (isMore) {
-    <button (click)="isMore = false">更少資訊</button>
-  } @else {
-    <button (click)="isMore = true">更多資訊</button>
-  }
-}
-<table class="table">
-  <thead>
-  <tr>
-    <th>{{ columntitle1 }}</th>
-    <th>{{ columntitle2 }}</th>
-    <th>{{ columntitle3 }}</th>
-    <th>{{ columntitle4 }}</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let column of columns; let i = index">
-    <td>{{ column.column1 }}</td>
-    <td>{{ column.column2 }}</td>
-    <td>{{ column.column3 }}</td>
-    <td>{{ column.column4 }}</td>
-    @if (isMore) {
-      <td>
-        @if (link && column.link != null && column.link != '' ) {
-          <a href="{{ column.link }}" style="text-decoration: none;" target="_blank">🔗</a>
-        }
-        <button (click)="EditClick(column, i)">編輯</button>
-        <button (click)="RemoveClick(column, i)">刪除</button>
-      </td>
-    }
-  </tr>
-  </tbody>
-</table>
+<!-- 編輯模式 -->
+<ul *ngIf="isEdit">
+  <li class="mb-3">
+    <label>{{ columntitle1 }}：</label>
+    <textarea [(ngModel)]="tempcolumn1" class="form-control"></textarea>
+  </li>
+  <li class="mb-3">
+    <label>{{ columntitle2 }}：</label>
+    <textarea [(ngModel)]="tempcolumn2" class="form-control"></textarea>
+  </li>
+  <li class="mb-3">
+    <label>{{ columntitle3 }}：</label>
+    <textarea [(ngModel)]="tempcolumn3" class="form-control"></textarea>
+  </li>
+  <li class="mb-3">
+    <label>{{ columntitle4 }}：</label>
+    <textarea [(ngModel)]="tempcolumn4" class="form-control"></textarea>
+  </li>
+  <li *ngIf="link" class="mb-3">
+    <label>link：</label>
+    <textarea [(ngModel)]="templink" class="form-control"></textarea>
+  </li>
+  <li>
+    <button (click)="SaveClick()" class="btn btn-primary me-2">儲存</button>
+    <button (click)="CancelClick()" class="btn btn-secondary">取消</button>
+  </li>
+</ul>
 
+<!-- 更多/更少資訊切換 -->
+<div *ngIf="crud" class="mb-2">
+  <button (click)="isMore = !isMore" class="btn btn-info">
+    {{ isMore ? '更少資訊' : '更多資訊' }}
+  </button>
+</div>
+
+<!-- 表格 -->
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>{{ columntitle1 }}</th>
+      <th>{{ columntitle2 }}</th>
+      <th>{{ columntitle3 }}</th>
+      <th>{{ columntitle4 }}</th>
+      <th *ngIf="isMore">操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let column of columns; let i = index">
+      <td class="text-wrap">{{ column.column1 }}</td>
+      <td class="text-wrap">{{ column.column2 }}</td>
+      <td class="text-wrap">{{ column.column3 }}</td>
+      <td class="text-wrap">{{ column.column4 }}</td>
+      <td *ngIf="isMore">
+        <div class="d-flex flex-wrap flex-md-row flex-column gap-2 w-100">
+          <ng-container *ngIf="link && column.link">
+            <a [href]="column.link" target="_blank" class="btn btn-outline-primary btn-sm">🔗 Link</a>
+          </ng-container>
+          <button (click)="EditClick(column, i)" class="btn btn-warning btn-sm">編輯</button>
+          <button (click)="RemoveClick(column, i)" class="btn btn-danger btn-sm">刪除</button>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
