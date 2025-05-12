@@ -14,14 +14,14 @@ export class Tab4Component implements OnInit {
   columns = [
     {
       column1: '活力125',
-      column2: '58,500',
+      column2: '58500',
       column3: '2025',
       column4: 'SYM三陽',
       link:'https://24h.pchome.com.tw/prod/DXBK00-A900BFY16'
     },
     {
       column1: 'Pulse Pro',
-      column2: '116980 ',
+      column2: '116980',
       column3: '2025',
       column4: 'Gogoro',
       link:'https://www.gogoro.com/tw/smartscooter/pulse/'
