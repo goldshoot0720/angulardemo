@@ -15,6 +15,20 @@ export class Tab7Component implements AfterViewInit {
 
   playlist = [
     {
+      name: 'TVアニメ『リコリス・リコイル』ノンテロップEDムービー｜さユり「花の塔」-58f7e41042ecdb43.mp4',
+      sources: [{
+        src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8E%E3%83%AA%E3%82%B3%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%AA%E3%82%B3%E3%82%A4%E3%83%AB%E3%80%8F%E3%83%8E%E3%83%B3%E3%83%86%E3%83%AD%E3%83%83%E3%83%97ED%E3%83%A0%E3%83%BC%E3%83%93%E3%83%BC%EF%BD%9C%E3%81%95%E3%83%A6%E3%82%8A%E3%80%8C%E8%8A%B1%E3%81%AE%E5%A1%94%E3%80%8D-58f7e41042ecdb43.mp4?alt=media&token=add5dfed-191e-4cd6-b5f8-1c2349a454ce',
+        type: 'video/mp4'
+      }]
+    },
+    {
+      name: 'TVアニメ『リコリス・リコイル』ノンテロップOPムービー｜ClariS「ALIVE」-62cbcd030a41fd06.mp4',
+      sources: [{
+        src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8E%E3%83%AA%E3%82%B3%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%AA%E3%82%B3%E3%82%A4%E3%83%AB%E3%80%8F%E3%83%8E%E3%83%B3%E3%83%86%E3%83%AD%E3%83%83%E3%83%97OP%E3%83%A0%E3%83%BC%E3%83%93%E3%83%BC%EF%BD%9CClariS%E3%80%8CALIVE%E3%80%8D-62cbcd030a41fd06.mp4?alt=media&token=b23d54e3-56c6-4633-a3be-09d14128d12f',
+        type: 'video/mp4'
+      }]
+    },
+    {
       name: 'TVアニメ「クラスの大嫌いな女子と結婚することになった。」ノンクレジットエンディング｜「スキキライも追い越して」桜森朱音（CV.矢野妃菜喜）＆石倉陽鞠（CV.鈴代紗弓）＆北条糸青（CV.稗田寧々）',
       sources: [{
         src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E3%82%AF%E3%83%A9%E3%82%B9%E3%81%AE%E5%A4%A7%E5%AB%8C%E3%81%84%E3%81%AA%E5%A5%B3%E5%AD%90%E3%81%A8%E7%B5%90%E5%A9%9A%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E3%80%82%E3%80%8D%E3%83%8E%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%EF%BD%9C%E3%80%8C%E3%82%B9%E3%82%AD%E3%82%AD%E3%83%A9%E3%82%A4%E3%82%82%E8%BF%BD%E3%81%84%E8%B6%8A%E3%81%97%E3%81%A6%E3%80%8D%E6%A1%9C%E6%A3%AE%E6%9C%B1%E9%9F%B3%EF%BC%88CV.%E7%9F%A2%E9%87%8E%E5%A6%83%E8%8F%9C%E5%96%9C%EF%BC%89%EF%BC%86%E7%9F%B3%E5%80%89%E9%99%BD%E9%9E%A0%EF%BC%88CV.%E9%88%B4%E4%BB%A3%E7%B4%97%E5%BC%93%EF%BC%89%EF%BC%86%E5%8C%97%E6%9D%A1%E7%B3%B8%E9%9D%92%EF%BC%88CV.%E7%A8%97%E7%94%B0%E5%AF%A7%E3%80%85%EF%BC%89-4e8073ccdf8e043.mp4?alt=media&token=5d51bc2c-2f49-455f-9302-e1e9f2fc7a4c',
