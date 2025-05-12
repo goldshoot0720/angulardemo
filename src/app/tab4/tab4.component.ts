@@ -89,9 +89,23 @@ export class Tab4Component implements OnInit {
       column4: 'M4',
       link:'https://24h.pchome.com.tw/prod/DYAJFD-A900I1EWG'
     },
+    {
+      column1: '合計',
+      column2: '',
+      column3: '',
+      column4: '',
+      link:''
+    },
   ];
 
   ngOnInit(): void {
     this.total = this.columns.reduce((sum, item) => sum + Number(item.column2), 0);
+    this.columns = this.columns.map(item => {
+      if (item.column1 === '合計') {
+        return { ...item, column2: String(this.total) };
+      } else {
+        return item;
+      }
+    });
   }
 }
