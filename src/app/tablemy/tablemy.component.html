@@ -52,7 +52,7 @@
     @if (isMore) {
       <td>
         @if (link && column.link != null ) {
-          <a href="{{ column.link }}" style="text-decoration: none;">🔗</a>
+          <a href="{{ column.link }}" style="text-decoration: none;" target="_blank">🔗</a>
         }
         <button (click)="EditClick(column, i)">編輯</button>
         <button (click)="RemoveClick(column, i)">刪除</button>
