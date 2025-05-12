@@ -308,7 +308,7 @@ export class Tab7Component implements AfterViewInit {
       controls: true,
       preload: 'auto',
       width: 333,
-      autoplay: true
+      autoplay: false
     });
 
     // 設定播放清單
@@ -318,5 +318,6 @@ export class Tab7Component implements AfterViewInit {
   playIndex(i: number) {
     // 播放指定索引的影片
     this.player.playlist.currentItem(i);
+    this.player.play();
   }
 }

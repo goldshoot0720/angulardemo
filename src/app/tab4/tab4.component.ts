@@ -27,6 +27,20 @@ export class Tab4Component implements OnInit {
       link:'https://www.gogoro.com/tw/smartscooter/pulse/'
     },
     {
+      column1: 'Mac mini M1',
+      column2: '0',
+      column3: '',
+      column4: '官網',
+      link:'https://support.apple.com/zh-tw/111894',
+    },
+    {
+      column1: 'Mac mini M2',
+      column2: '0',
+      column3: '',
+      column4: '官網',
+      link:'https://support.apple.com/zh-tw/111837',
+    },
+    {
       column1: 'Mac mini M2',
       column2: '18888',
       column3: '8月',
