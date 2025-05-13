@@ -1,9 +1,7 @@
 <h1>鋒兄Tube 🎬</h1>
-
-<video #playerContainer id="my-player" class="video-js vjs-default-skin"></video>
-
+<input type="file" class="form-control form-control-sm" (change)="onFileSelected($event)" accept="video/*">
 <hr>
-
+<video #playerContainer id="my-player" class="video-js vjs-default-skin"></video>
 <h3>播放清單️</h3>
 <ul>
   <li *ngFor="let item of playlist; let i = index" (click)="playIndex(i)">

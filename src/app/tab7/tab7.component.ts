@@ -167,152 +167,6 @@ export class Tab7Component implements AfterViewInit {
         src: '',
         type: 'video/mp4'
       }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    }
-    ,
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    }
-    ,
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    }
-    ,
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    }
-    ,
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    }
-    ,
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    }
-    ,
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
-    },
-    {
-      name: '',
-      sources: [{
-        src: '',
-        type: 'video/mp4'
-      }]
     }
   ];
 
@@ -332,6 +186,23 @@ export class Tab7Component implements AfterViewInit {
   playIndex(i: number) {
     // 播放指定索引的影片
     this.player.playlist.currentItem(i);
+    this.player.play();
+  }
+
+  ngOnDestroy() {
+    if (this.player) {
+      this.player.dispose();
+    }
+  }
+
+  onFileSelected(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    if (!input.files || input.files.length === 0) return;
+
+    const file = input.files[0];
+    const fileURL = URL.createObjectURL(file);
+
+    this.player.src({ src: fileURL, type: file.type });
     this.player.play();
   }
 }
