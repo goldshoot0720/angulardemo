@@ -21,16 +21,48 @@
     <textarea [(ngModel)]="templink" class="form-control"></textarea>
   </li>
   <li>
-    <button (click)="SaveClick()" class="btn btn-primary me-2">儲存</button>
-    <button (click)="CancelClick()" class="btn btn-secondary">取消</button>
+    <button (click)="EditDoubleClick()" class="btn btn-warning btn-sm">編輯</button>
+    {{" "}}
+    <button (click)="CancelClick()" class="btn btn-secondary btn-sm">取消</button>
+  </li>
+</ul>
+
+<!-- 新增模式 -->
+<ul *ngIf="isNew">
+  <li class="mb-3">
+    <label>{{ columntitle1 }}：</label>
+    <textarea [(ngModel)]="tempcolumn1" class="form-control"></textarea>
+  </li>
+  <li class="mb-3">
+    <label>{{ columntitle2 }}：</label>
+    <textarea [(ngModel)]="tempcolumn2" class="form-control"></textarea>
+  </li>
+  <li class="mb-3">
+    <label>{{ columntitle3 }}：</label>
+    <textarea [(ngModel)]="tempcolumn3" class="form-control"></textarea>
+  </li>
+  <li class="mb-3">
+    <label>{{ columntitle4 }}：</label>
+    <textarea [(ngModel)]="tempcolumn4" class="form-control"></textarea>
+  </li>
+  <li *ngIf="link" class="mb-3">
+    <label>link：</label>
+    <textarea [(ngModel)]="templink" class="form-control"></textarea>
+  </li>
+  <li>
+    <button (click)="NewDoubleClick()" class="btn btn-primary btn-sm">新增</button>
+    {{" "}}
+    <button (click)="CancelClick()" class="btn btn-secondary btn-sm">取消</button>
   </li>
 </ul>
 
 <!-- 更多/更少資訊切換 -->
 <div *ngIf="crud" class="mb-2">
-  <button (click)="isMore = !isMore" class="btn btn-info">
+  <button (click)="isMore = !isMore" class="btn btn-info btn-sm">
     {{ isMore ? '更少資訊' : '更多資訊' }}
   </button>
+  {{" "}}
+    <button *ngIf="isMore" (click)="NewClick()" class="btn btn-primary btn-sm">新增</button>
 </div>
 
 <!-- 表格 -->

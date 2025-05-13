@@ -170,7 +170,7 @@ export class Tab8Component {
     },
     {
       column1: '小米手環9NFC',
-      column2: '',
+      column2: '200',
       column3: 'SuperCard超級悠遊卡',
       column4: '冰川銀',
     },
