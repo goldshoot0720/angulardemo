@@ -135,5 +135,6 @@ export class Tab4Component implements OnInit {
         return item;
       }
     });
+    this.columns.sort((a, b) => Number(a.column2) - Number(b.column2));
   }
 }
