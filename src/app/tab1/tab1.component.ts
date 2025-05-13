@@ -32,16 +32,16 @@ export class Tab1Component implements OnInit {
   ];
   columns2 = [
     {
-      column1: '御料小館椒鹽鹽酥雞',
-      column2: '05/13',
-      column3: 'i禮贈',
-      column4: '小七',
+      column1: '',
+      column2: '',
+      column3: '',
+      column4: '',
     },
     {
-      column1: '新熱仙女紅茶',
-      column2: '05/13',
-      column3: '酷碰券',
-      column4: '全家',
+      column1: '',
+      column2: '',
+      column3: '',
+      column4: '',
     },
     {
       column1: '10元購物金',
