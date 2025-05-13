@@ -15,14 +15,28 @@ export class Tab7Component implements AfterViewInit {
 
   playlist = [
     {
-      name: 'TVアニメ『リコリス・リコイル』ノンテロップEDムービー｜さユり「花の塔」-58f7e41042ecdb43.mp4',
+      name: 'TVアニメ「新米錬金術師の店舗経営」ノンクレジットED',
+      sources: [{
+        src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E6%96%B0%E7%B1%B3%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB%E3%81%AE%E5%BA%97%E8%88%97%E7%B5%8C%E5%96%B6%E3%80%8D%E3%83%8E%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88ED-929249421d7d965.mp4?alt=media&token=bbe6c851-8418-4838-991c-026447704ed2',
+        type: 'video/mp4'
+      }]
+    },
+    {
+      name: 'TVアニメ「新米錬金術師の店舗経営」ノンクレジットOP',
+      sources: [{
+        src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E6%96%B0%E7%B1%B3%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB%E3%81%AE%E5%BA%97%E8%88%97%E7%B5%8C%E5%96%B6%E3%80%8D%E3%83%8E%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88OP-7b4bfaa937c664b5.mp4?alt=media&token=1e9bd070-7aff-47ea-85aa-dc7804d050c4',
+        type: 'video/mp4'
+      }]
+    },
+    {
+      name: 'TVアニメ『リコリス・リコイル』ノンテロップEDムービー｜さユり「花の塔',
       sources: [{
         src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8E%E3%83%AA%E3%82%B3%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%AA%E3%82%B3%E3%82%A4%E3%83%AB%E3%80%8F%E3%83%8E%E3%83%B3%E3%83%86%E3%83%AD%E3%83%83%E3%83%97ED%E3%83%A0%E3%83%BC%E3%83%93%E3%83%BC%EF%BD%9C%E3%81%95%E3%83%A6%E3%82%8A%E3%80%8C%E8%8A%B1%E3%81%AE%E5%A1%94%E3%80%8D-58f7e41042ecdb43.mp4?alt=media&token=add5dfed-191e-4cd6-b5f8-1c2349a454ce',
         type: 'video/mp4'
       }]
     },
     {
-      name: 'TVアニメ『リコリス・リコイル』ノンテロップOPムービー｜ClariS「ALIVE」-62cbcd030a41fd06.mp4',
+      name: 'TVアニメ『リコリス・リコイル』ノンテロップOPムービー｜ClariS「ALIVE」',
       sources: [{
         src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8E%E3%83%AA%E3%82%B3%E3%83%AA%E3%82%B9%E3%83%BB%E3%83%AA%E3%82%B3%E3%82%A4%E3%83%AB%E3%80%8F%E3%83%8E%E3%83%B3%E3%83%86%E3%83%AD%E3%83%83%E3%83%97OP%E3%83%A0%E3%83%BC%E3%83%93%E3%83%BC%EF%BD%9CClariS%E3%80%8CALIVE%E3%80%8D-62cbcd030a41fd06.mp4?alt=media&token=b23d54e3-56c6-4633-a3be-09d14128d12f',
         type: 'video/mp4'
