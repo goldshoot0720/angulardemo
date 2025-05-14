@@ -29,6 +29,10 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/video.js/dist/video-js.css",
+              "node_modules/@videojs/themes/dist/city/index.css",
+              "node_modules/@videojs/themes/dist/sea/index.css",
+              "node_modules/@videojs/themes/dist/forest/index.css",
+              "node_modules/@videojs/themes/dist/fantasy/index.css",
               "src/styles.css"
             ],
             "scripts": [
@@ -97,6 +101,10 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/video.js/dist/video-js.css",
+              "node_modules/@videojs/themes/dist/city/index.css",
+              "node_modules/@videojs/themes/dist/sea/index.css",
+              "node_modules/@videojs/themes/dist/forest/index.css",
+              "node_modules/@videojs/themes/dist/fantasy/index.css",
               "src/styles.css"
             ],
             "scripts": [
