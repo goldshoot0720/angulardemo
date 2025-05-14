@@ -15,6 +15,34 @@ export class Tab7Component implements AfterViewInit {
 
   playlist = [
     {
+      name: 'TVアニメ「カッコウの許嫁」ノンクレジットオープニング映像【吉岡聖恵「凸凹」】',
+      sources: [{
+        src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E3%82%AB%E3%83%83%E3%82%B3%E3%82%A6%E3%81%AE%E8%A8%B1%E5%AB%81%E3%80%8D%E3%83%8E%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E3%82%AA%E3%83%BC%E3%83%97%E3%83%8B%E3%83%B3%E3%82%B0%E6%98%A0%E5%83%8F%E3%80%90%E5%90%89%E5%B2%A1%E8%81%96%E6%81%B5%E3%80%8C%E5%87%B8%E5%87%B9%E3%80%8D%E3%80%91-3b91a7dae4897fef.mp4?alt=media&token=4823e43c-768b-426b-8d74-de1de71b1b75',
+        type: 'video/mp4'
+      }]
+    },
+    {
+      name: 'TVアニメ「カッコウの許嫁」ノンクレジットエンディング映像【三月のパンタシア「四角運命」】',
+      sources: [{
+        src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E3%82%AB%E3%83%83%E3%82%B3%E3%82%A6%E3%81%AE%E8%A8%B1%E5%AB%81%E3%80%8D%E3%83%8E%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E6%98%A0%E5%83%8F%E3%80%90%E4%B8%89%E6%9C%88%E3%81%AE%E3%83%91%E3%83%B3%E3%82%BF%E3%82%B7%E3%82%A2%E3%80%8C%E5%9B%9B%E8%A7%92%E9%81%8B%E5%91%BD%E3%80%8D%E3%80%91-7d278e48db7f9d2d.mp4?alt=media&token=fcc44e7a-d166-4c1d-8730-9700b849ff8e',
+        type: 'video/mp4'
+      }]
+    },
+    {
+      name: 'TVアニメ「カッコウの許嫁」2クール目ノンクレジットオープニング映像【sumika「Glitter」】',
+      sources: [{
+        src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E3%82%AB%E3%83%83%E3%82%B3%E3%82%A6%E3%81%AE%E8%A8%B1%E5%AB%81%E3%80%8D2%E3%82%AF%E3%83%BC%E3%83%AB%E7%9B%AE%E3%83%8E%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E3%82%AA%E3%83%BC%E3%83%97%E3%83%8B%E3%83%B3%E3%82%B0%E6%98%A0%E5%83%8F%E3%80%90sumika%E3%80%8CGlitter%E3%80%8D%E3%80%91-73478f693b9f7bc2.mp4?alt=media&token=0b1d7930-6087-40de-90ce-c772c92ac4f0',
+        type: 'video/mp4'
+      }]
+    },
+    {
+      name: 'TVアニメ「カッコウの許嫁」2クール目ノンクレジットエンディング映像【藍井エイル「HELLO HELLO HELLO」】',
+      sources: [{
+        src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E3%82%AB%E3%83%83%E3%82%B3%E3%82%A6%E3%81%AE%E8%A8%B1%E5%AB%81%E3%80%8D2%E3%82%AF%E3%83%BC%E3%83%AB%E7%9B%AE%E3%83%8E%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E6%98%A0%E5%83%8F%E3%80%90%E8%97%8D%E4%BA%95%E3%82%A8%E3%82%A4%E3%83%AB%E3%80%8CHELLO%20HELLO%20HELLO%E3%80%8D%E3%80%91-8d1d3b44b98aae6.webm?alt=media&token=cc82cd14-e196-4876-9162-2494b33e1419',
+        type: 'video/mp4'
+      }]
+    },
+    {
       name: 'TVアニメ「新米錬金術師の店舗経営」ノンクレジットED',
       sources: [{
         src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2FTV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E6%96%B0%E7%B1%B3%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%AB%E3%81%AE%E5%BA%97%E8%88%97%E7%B5%8C%E5%96%B6%E3%80%8D%E3%83%8E%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88ED-929249421d7d965.mp4?alt=media&token=bbe6c851-8418-4838-991c-026447704ed2',
@@ -157,14 +185,6 @@ export class Tab7Component implements AfterViewInit {
       name: '【ノンクレジットOP】TVアニメ「甘神さんちの縁結び」_ 甘神三姉妹「Pray Pray Pray」',
       sources: [{
         src: 'https://firebasestorage.googleapis.com/v0/b/tsaopaofenghsiung2025.firebasestorage.app/o/videos%2F%E3%80%90%E3%83%8E%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B8%E3%83%83%E3%83%88OP%E3%80%91TV%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E7%94%98%E7%A5%9E%E3%81%95%E3%82%93%E3%81%A1%E3%81%AE%E7%B8%81%E7%B5%90%E3%81%B3%E3%80%8D_%20%E7%94%98%E7%A5%9E%E4%B8%89%E5%A7%89%E5%A6%B9%E3%80%8CPray%20Pray%20Pray%E3%80%8D.mp4?alt=media&token=ec17f59c-77bb-45bb-822c-dc7723f8bc21',
-        type: 'video/mp4'
-      }]
-    }
-    ,
-    {
-      name: '',
-      sources: [{
-        src: '',
         type: 'video/mp4'
       }]
     }

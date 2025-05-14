@@ -4,7 +4,7 @@ git init
 
 git add .
 
-git commit -m "angulardemo input type file"
+git commit -m "angulardemo new op new ed"
 
 git remote add origin https://github.com/goldshoot0720/angulardemo.git
 
